@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="web-calculator-demo:war">
+    <output-path>$PROJECT_DIR$/web-demo/target</output-path>
+    <root id="archive" name="web-calculator-demo_war.war" />
+  </artifact>
+</component>
