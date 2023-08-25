@@ -1,6 +1,8 @@
+Below is the reference information provided by Lovish and Pawan at USMLESarthi.
+
 ### Coefficients for internal medince
-![Alt text](image.png)
-![Alt text](image-1.png)
+![image](https://github.com/Huang-Raoyi/usmle-web-calculator-demo/assets/81523429/fbaf4885-c8d5-4037-af8f-6f1f3fe16dc1)
+![image](https://github.com/Huang-Raoyi/usmle-web-calculator-demo/assets/81523429/2c76ad29-dd55-4772-aa1f-2230e0ff388e)
 
 
 ### PHP codes for prob calculation
