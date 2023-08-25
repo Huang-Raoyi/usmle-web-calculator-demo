@@ -34,7 +34,7 @@ public class Record {
         Double[] x_temp = {(double) step1, (double)step1Failure,  (double)Step2, (double)Step2Failure, (double)Step2CSFailure, (double)Step3, (double)Step3Failure, visaCode, (double)YOG, residencyCode, (double)clinicalExperience, (double)ResearchExperience, (double)papers};
 
         ArrayList<Double> x = new ArrayList<>(Arrays.asList(x_temp));
-        System.out.println(x);
+//        System.out.println(x);
 
         for (int i=0; i < features_toNormalize.length; i++) {
             x.set(features_toNormalize[i], (x.get(features_toNormalize[i]) - means[i])/ stds[i]);
@@ -241,7 +241,7 @@ public class Record {
     }
 
     public void setSpeciality(String speciality) {
-        System.out.println(speciality);
+//        System.out.println(speciality);
         if (speciality == null) {
             throw new IllegalArgumentException("Wrong speciality entered");
         }

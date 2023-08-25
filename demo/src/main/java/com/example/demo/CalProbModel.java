@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public class CalProbModel {
     ArrayList<Record> records = new ArrayList<>();
-    final static String PATH = "/Users/huangraoyi/IdeaProjects/distributedSystemsISM/usmle-webdemo/demo";
+    final static String PATH = "/Users/huangraoyi/IdeaProjects/distributedSystemsISM/usmle-probability-calculator/demo";
 
 
     public void save() {
