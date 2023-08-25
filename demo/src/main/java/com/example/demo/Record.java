@@ -29,12 +29,10 @@ public class Record {
 
 
     public double getProb(){
-        System.out.println("1");
         double visaCode = visaNeeded ? 1.0 : 0.0;
         double residencyCode = priorResidency ? 1.0 : 0.0;
         Double[] x_temp = {(double) step1, (double)step1Failure,  (double)Step2, (double)Step2Failure, (double)Step2CSFailure, (double)Step3, (double)Step3Failure, visaCode, (double)YOG, residencyCode, (double)clinicalExperience, (double)ResearchExperience, (double)papers};
 
-        System.out.println("2");
         ArrayList<Double> x = new ArrayList<>(Arrays.asList(x_temp));
         System.out.println(x);
 
@@ -43,7 +41,6 @@ public class Record {
 //            System.out.println(x);
         }
 
-        System.out.println("3");
         if (speciality.equalsIgnoreCase("Family Medicine")) {
             x.add(1.0); x.add(0.0); x.add(0.0); x.add(0.0); x.add(0.0); x.add(0.0);
         }else if (speciality.equalsIgnoreCase("Internal Medicine")) {
@@ -60,12 +57,11 @@ public class Record {
             throw new IllegalArgumentException("Unknown speciality input");
         }
 
-        System.out.println("4");
         double res = coefficients[0];
         for (int i=0; i < x.size(); i++) {
             res += coefficients[i+1] * x.get(i);
         }
-        System.out.println("5");
+
         prob = Math.exp(res) / (1+Math.exp(res));
 
         return prob;

@@ -18,18 +18,13 @@ public class CalProbServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         Record record = getRecord(request);
-        System.out.println("Here1");
         response.setContentType("text/html");
 
-        System.out.println("Here2");
         // Hello
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
-        System.out.println("Here3");
         out.println("<h1>" + record.getProb() + "</h1>");
-        System.out.println("Here4");
         out.println("</body></html>");
-
 
         model.add(record);
     }
